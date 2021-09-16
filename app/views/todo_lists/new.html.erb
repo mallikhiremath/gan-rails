@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<h2 class="todo_list_title">New Todo List</h2>
+
+<div id="todo_items_wrapper">
+  <%= render @todo_list.todo_items %>
+  <div id="form">
+    <%= render 'form', todo_list: @todo_list %>
+  </div>
+</div>
+
+<div class="links">
+  <%= link_to 'Back', todo_lists_path %>
+</div>
